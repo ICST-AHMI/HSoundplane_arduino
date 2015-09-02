@@ -901,7 +901,7 @@ void sendToSlave(uint8_t sAddr, uint8_t *mes, uint8_t len)
 		Wire.write(mes[i]);				// send all indexes associated to this slave
 	}
 	if(debug) {
-		Serial.println("");
+		Serial.println("========================================");
 	}
 	Wire.endTransmission();
 }
